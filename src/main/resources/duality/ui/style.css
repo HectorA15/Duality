@@ -1,0 +1,54 @@
+.left-pane {
+    -fx-background-color: #f2f2f2;
+}
+.right-pane {
+    -fx-background-color: #fff;
+}
+.title-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+.restrictions-box {
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12 8 12 8;
+}
+.circle-green {
+    -fx-background-color: #73a43e;
+    -fx-background-radius: 20em;
+    -fx-font-size: 22px;
+    -fx-text-fill: white;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+}
+.circle-yellow {
+    -fx-background-color: #e8d736;
+    -fx-background-radius: 20em;
+    -fx-font-size: 22px;
+    -fx-text-fill: #555;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+}
+.circle-red {
+    -fx-background-color: #e95353;
+    -fx-background-radius: 20em;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-pref-width: 28px;
+    -fx-pref-height: 28px;
+}
+.text-area {
+    -fx-background-radius: 10;
+    -fx-font-size: 15px;
+}
+.text-field {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-font-size: 16px;
+}
+.button {
+    -fx-cursor: hand;
+}

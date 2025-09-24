@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="duality.controller.MainViewController"
+            prefWidth="1280" prefHeight="720"
+            stylesheets="@../ui/resources/style.css">
+
+    <!-- Izquierda: Función objetivo y restricciones -->
+    <left>
+        <VBox spacing="15" styleClass="left-pane">
+            <children>
+                <Label text="Función Objetivo" styleClass="title-label"/>
+                <HBox alignment="CENTER" spacing="8">
+                    <TextField fx:id="objXField" prefWidth="64"/>
+                    <Label text="x +"/>
+                    <TextField fx:id="objYField" prefWidth="64"/>
+                    <Label text="y"/>
+                </HBox>
+                <VBox fx:id="restrictionsBox" spacing="8" styleClass="restrictions-box"/>
+                <HBox spacing="14" alignment="CENTER_LEFT">
+                    <Button fx:id="addBtn" text="+" styleClass="circle-green"/>
+                    <Button fx:id="centerBtn" text="⛶" styleClass="circle-yellow"/>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="12" bottom="12" left="12" right="12"/>
+            </padding>
+            <prefWidth>340</prefWidth>
+        </VBox>
+    </left>
+
+    <!-- Centro: Canvas gráfico -->
+    <center>
+        <StackPane>
+            <Canvas fx:id="plotCanvas" width="700" height="600"/>
+        </StackPane>
+    </center>
+
+    <!-- Derecha: Intersecciones -->
+    <right>
+        <VBox spacing="8" styleClass="right-pane">
+            <children>
+                <Label text="Intersecciones" styleClass="title-label"/>
+                <TextArea fx:id="outputArea" prefHeight="600" editable="false"/>
+            </children>
+            <padding>
+                <Insets top="12" bottom="12" left="12" right="12"/>
+            </padding>
+            <prefWidth>270</prefWidth>
+        </VBox>
+    </right>
+</BorderPane>
