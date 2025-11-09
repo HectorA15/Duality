@@ -1,1 +1,2 @@
-This is a program I made along github Copilot for a class project and learning how to create UI
+## What It does?
+Duealiy it's a graphic calculator that I made for a class in my University. I used help from Github Copilot to understand and learn how to use CSS and JavaFX
